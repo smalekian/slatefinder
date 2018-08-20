@@ -31,7 +31,7 @@ use Mix.Config
 config :slatefinder, Slatefinder.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "slatefinder",
-  username: "[USERNAME]",
-  password: ""
+  username: "postgres",
+  password: "postgres"
 
 config :slatefinder, ecto_repos: [Slatefinder.Repo]
