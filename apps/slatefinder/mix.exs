@@ -12,7 +12,7 @@ defmodule Slatefinder.MixProject do
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases
+      aliases: aliases()
     ]
   end
 
@@ -38,7 +38,7 @@ defmodule Slatefinder.MixProject do
 
   defp aliases do
     [
-      "init": ["ecto.create", "ecto.migrate", "run priv/repo/seed.exs"]
+      init: ["ecto.create", "ecto.migrate", "run priv/repo/seed.exs"]
     ]
   end
 end
